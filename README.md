@@ -1,10 +1,3 @@
-# TechTrojans
-
-
-
-
-
-
 import random
 
 class BiometricSystem:
