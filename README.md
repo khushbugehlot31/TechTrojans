@@ -5,7 +5,7 @@ class BiometricSystem:
         # Simulated biometric verification
         return random.choice([True, False])
 
-class VotingMachine:
+class VoterMachine:
     def __init__(self, biometric_system):
         self.biometric_system = biometric_system
         self.registered_voters = {}
