@@ -1,19 +1,19 @@
 import random
 
 class BiometricSystem:
-    def verify_fingerprint(self, fingerprint):
+    def verify_fingerprint(Self, fingerprint):
         # Simulated biometric verification
         return random.choice([True, False])
 
 class VoterMachine:
-    def __init__(self, biometric_system):
+    def __init__(Self, biometric_system):
         self.biometric_system = biometric_system
         self.registered_voters = {}
 
-    def register_voter(self, voter_id, fingerprint):
+    def register_voter(Self, voter_id, fingerprint):
         self.registered_voters[voter_id] = fingerprint
 
-    def vote(self, voter_id, candidate):
+    def vote(Self, voter_id, candidate):
         if voter_id in self.registered_voters:
             fingerprint = self.registered_voters[voter_id]
             if self.biometric_system.verify_fingerprint(fingerprint):
