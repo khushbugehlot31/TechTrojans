@@ -1,4 +1,10 @@
 # TechTrojans
+
+
+
+
+
+
 import random
 
 class BiometricSystem:
@@ -21,6 +27,7 @@ class VotingMachine:
                 print(f"Voter {voter_id} verified. Vote cast for {candidate}.")
             else:
                 print(f"Biometric verification failed for voter {voter_id}. Vote not cast.")
+                
         else:
             print(f"Voter {voter_id} is not registered. Vote not cast.")
 
